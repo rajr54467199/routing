@@ -1,0 +1,17 @@
+<p>about works!</p>
+<table>
+    <tr>
+        <th>name</th>
+        <th>native</th>
+        <th>hobby</th>
+        <th>mostlike</th>
+        <th>mosthate</th>
+    </tr>
+    <tr *ngFor="let e of about" (click)="list(e.id)">
+        <td>{{e.pname}}</td>
+        <td>{{e.native}}</td>
+        <td>{{e.hobby}}</td>
+        <td>{{e.mostlike}}</td>
+        <td>{{e.mosthate}}</td>
+    </tr>
+</table>
